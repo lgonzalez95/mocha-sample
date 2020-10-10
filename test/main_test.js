@@ -5,7 +5,7 @@ describe('Nuestro primer suite', ()=>{
 
     it ('Obtener saludo' , () =>{
         const saludo = getFullNameGreeting('pablo','calvo');
-        expect(saludo).to.equal('Hola pablo calvo');
+        expect(saludo).to.equal('Hello pablo calvo');
     })
 });
 
