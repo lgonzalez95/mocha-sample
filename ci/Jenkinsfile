@@ -33,16 +33,5 @@ pipeline {
                 echo 'GoodBye 4'
             }
         }
-        stage('Docker') {
-            agent {
-                docker {
-                    image "node:10"
-                }
-            }
-            steps {
-                echo 'Good Bye'
-                echo 'GoodBye 4'
-            }
-        }
     }
 }
