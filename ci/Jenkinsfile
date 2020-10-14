@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     stages {
-        stage('Ubuntu') {
-            agent {
-                docker {
-                    image 'alpine'
+        stage('When') {
+            when {
+                not {
+                    branch "main"
                 }
             }
             steps {
-                echo 'Hello World from alpine'
+                echo 'Hola'
             }
         }
         stage('GoodBye') {
