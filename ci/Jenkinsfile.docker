@@ -8,8 +8,7 @@ pipeline {
             steps {
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
                     sh '''
-                    node --version
-                    npm install newman
+                    npm install --save-dev newman
                     cd api/newman
                     newman run examen.postman_collection.json -e herokuexamen.postman_environment.json               
                     '''
@@ -17,6 +16,9 @@ pipeline {
             }
         }
         stage('RestAssured Tests') {
+            agent {
+                docker { image 'maven' }
+            }
             steps {
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
                     sh '''
