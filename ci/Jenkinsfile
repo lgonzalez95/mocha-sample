@@ -3,20 +3,24 @@ pipeline {
     stages {
         stage('Newman Tests') {
             steps {
-                sh '''
-                node --version
-                cd api/newman
-                newman run examen.postman_collection.json -e herokuexamen.postman_environment.json               
-                '''
+                catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+                    sh '''
+                    node --version
+                    cd api/newman
+                    newman run examen.postman_collection.json -e herokuexamen.postman_environment.json               
+                    '''
+                }
             }
         }
         stage('RestAssured Tests') {
             steps {
-                sh '''
-                cd api/rest_assured
-                mvn clean test
-                '''
-            }
+                catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+                    sh '''
+                        cd api/rest_assured
+                        mvn clean test
+                        '''
+                }
+            }              
         }
         stage('Jmeter Tests') {
             steps {

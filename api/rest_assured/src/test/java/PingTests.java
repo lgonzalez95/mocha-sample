@@ -13,7 +13,7 @@ public class PingTests extends BaseTest{
                 .then()
                 .statusCode(200)
                 .header("Access-Control-Allow-Origin", equalTo("http://localhost"))
-                .body("id", equalTo(3),
+                .body("ids", equalTo(3),
                         "response", equalTo("pong"));
     }
 }
