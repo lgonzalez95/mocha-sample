@@ -1,0 +1,51 @@
+{
+	"info": {
+		"_postman_id": "0175423a-47b8-467d-83d5-5f1baee52498",
+		"name": "Examen",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ping",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "3f464742-a2f0-4e5a-a6fb-8a895f215d88",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"YVerify response equals pong\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.response).to.eql(\"pong\");",
+							"});",
+							"",
+							"pm.test(\"Verify ID NUmber\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.id).to.eql(3);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/ping",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"ping"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
