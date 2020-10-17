@@ -4,6 +4,7 @@ pipeline {
         stage('Newman Tests') {
             steps {
                 sh '''
+                node --version
                 cd api/newman
                 newman run examen.postman_collection.json -e herokuexamen.postman_environment.json
                 '''
