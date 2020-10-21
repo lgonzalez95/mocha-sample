@@ -1,0 +1,13 @@
+name: A workflow for Jmeter Tests
+on: push
+
+jobs:
+  build:
+    name: Jmeter Test 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run JMeter Tests
+        uses: rbhadti94/apache-jmeter-action@v0.2.0
+        with:
+          testFilePath: load/examen_test_plan.jmx
+          outputReportsFolder: reports/
