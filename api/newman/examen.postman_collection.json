@@ -14,7 +14,7 @@
 						"id": "3f464742-a2f0-4e5a-a6fb-8a895f215d88",
 						"exec": [
 							"pm.test(\"Status code is 300\", function () {",
-							"    pm.response.to.have.status(200);",
+							"    pm.response.to.have.status(300);",
 							"});",
 							"",
 							"pm.test(\"YVerify response equals pong\", function () {",
