@@ -60,7 +60,7 @@
         </HTTPSamplerProxy>
         <hashTree>
           <JSONPathAssertion guiclass="JSONPathAssertionGui" testclass="JSONPathAssertion" testname="JSON Assertion" enabled="true">
-            <stringProp name="JSON_PATH">response</stringProp>
+            <stringProp name="JSON_PATH">response1</stringProp>
             <stringProp name="EXPECTED_VALUE">pong</stringProp>
             <boolProp name="JSONVALIDATION">true</boolProp>
             <boolProp name="EXPECT_NULL">false</boolProp>
