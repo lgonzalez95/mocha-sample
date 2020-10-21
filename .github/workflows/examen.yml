@@ -12,3 +12,20 @@ jobs:
         with:
           testFilePath: load/examen_test_plan.jmx
           outputReportsFolder: reports/
+  test:
+    name: newman
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+
+      - name: Run API Tests
+        id: run-newman
+        uses: anthonyvscode/newman-action@v1
+        with:
+          collection: api/newman/examen.postman_collection.json
+          reporters: cli
+          environment: api/newman/herokuexamen.postman_environment.json
+
+      - name: Output summary to console
+        run: echo ${{ steps.run-api-tests.outputs.summary }}
