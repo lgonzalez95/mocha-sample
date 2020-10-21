@@ -40,6 +40,7 @@ jobs:
         uses: stCarolas/setup-maven@v3
         with:
           maven-version: 3.5.4
+      - name: Run Tests
         run: cd api/rest_assured && mvn clean test
       
           
