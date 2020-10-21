@@ -6,6 +6,7 @@ jobs:
     name: Jmeter Test 
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v1
       - name: Run JMeter Tests
         uses: rbhadti94/apache-jmeter-action@v0.2.0
         with:
