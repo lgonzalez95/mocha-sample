@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9aef29a1-7776-43ed-8db1-fdb2cd62e1ed" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/PingTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ci/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/../../ci/Jenkinsfile" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1iz4dZm7xyRbDNUPCp33vs9YCBF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="abbreviatePackageNames" value="true" />
+    <option name="flattenPackages" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RunManager" selected="TestNG./Users/pjcalvo/Documents/repos-course/mocha-sample/api/rest_assured/src/test/resources/examen.testng.xml">
+    <configuration name="PingTests.Ping_Test" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="rest_assured" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PingTests" />
+      <option name="METHOD_NAME" value="Ping_Test" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="/Users/pjcalvo/Documents/repos-course/mocha-sample/api/rest_assured/src/test/resources/examen.testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="rest_assured" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/examen.testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG./Users/pjcalvo/Documents/repos-course/mocha-sample/api/rest_assured/src/test/resources/examen.testng.xml" />
+        <item itemvalue="TestNG.PingTests.Ping_Test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9aef29a1-7776-43ed-8db1-fdb2cd62e1ed" name="Default Changelist" comment="" />
+      <created>1602897174600</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602897174600</updated>
+      <workItem from="1602897179144" duration="889000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1593" height="280" key="GridCell.Tab.0.bottom" timestamp="1602898069926">
+      <screen x="0" y="23" width="1635" height="1027" />
+    </state>
+    <state width="1593" height="280" key="GridCell.Tab.0.bottom/0.23.1635.1027/-592.-1417.2560.1417@0.23.1635.1027" timestamp="1602898069926" />
+    <state width="1593" height="280" key="GridCell.Tab.0.center" timestamp="1602898069925">
+      <screen x="0" y="23" width="1635" height="1027" />
+    </state>
+    <state width="1593" height="280" key="GridCell.Tab.0.center/0.23.1635.1027/-592.-1417.2560.1417@0.23.1635.1027" timestamp="1602898069925" />
+    <state width="1593" height="280" key="GridCell.Tab.0.left" timestamp="1602898069925">
+      <screen x="0" y="23" width="1635" height="1027" />
+    </state>
+    <state width="1593" height="280" key="GridCell.Tab.0.left/0.23.1635.1027/-592.-1417.2560.1417@0.23.1635.1027" timestamp="1602898069925" />
+    <state width="1593" height="280" key="GridCell.Tab.0.right" timestamp="1602898069926">
+      <screen x="0" y="23" width="1635" height="1027" />
+    </state>
+    <state width="1593" height="280" key="GridCell.Tab.0.right/0.23.1635.1027/-592.-1417.2560.1417@0.23.1635.1027" timestamp="1602898069926" />
+  </component>
+</project>

@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 12.873 s <<< FAILURE! - in TestSuite
+Ping_Test(PingTests)  Time elapsed: 1.484 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path ids doesn't match.
+Expected: <3>
+  Actual: null
+
+	at PingTests.Ping_Test(PingTests.java:16)
+
