@@ -1,0 +1,49 @@
+pipeline {
+    agent {
+        docker { image 'node:14-alpine' }
+    }
+
+    stages {
+        stage('Hello1') {
+            steps {
+                echo 'Hello2'
+            }
+        }
+
+        stage('Hello2') {
+            steps {
+                echo 'Hello2'
+            }
+            post {
+                always{
+                    echo 'Post Second Hello2'     
+                }
+                success {
+                    echo 'Post on success'
+                }
+                
+            }
+        }
+        stage('Manual Confirmation') {
+            steps {
+                    input('Do you want to proceed?')
+                }
+        }
+        stage('Error') {
+            steps {
+                sh "exit 1"
+            }
+        }
+    }
+    post {
+        failure {
+            echo 'Failed'
+        }
+        success {
+            echo 'Success'
+        }
+        always {
+            echo 'I alwasy run'
+        }
+    }
+}
