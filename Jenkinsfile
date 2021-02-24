@@ -1,12 +1,14 @@
 pipeline {
     agent any
-
     stages {
         stage('Node Version 14') {
             agent {
                 docker { 
                     image 'node:14' 
                     }
+            }
+            environment {
+                HOME = '.'
             }
             steps {
                 sh """
