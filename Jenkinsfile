@@ -2,8 +2,22 @@ pipeline {
     agent any
     stages {
         stage("build") {
-            steps {
-                sh "npm install"
+            stages {
+                stage("Start pipeline ") {
+                    steps {
+                        input("Do you want to start?")
+                    }
+                }
+                stage("Execute install") {
+                    steps {
+                        sh "npm install"
+                    }
+                }
+            }
+            post {
+                    always {
+                        echo "This run always after execute"
+                    }
             }
         }
         stage("test") {
@@ -11,5 +25,16 @@ pipeline {
                 sh "npm run test"
             }
         }
+    }
+    post {
+            failure {
+                echo "A step failed"
+            }
+            success {
+                echo "No steps faile"
+            }
+            always {
+                echo "I alwyas run"
+            }
     }
 }
