@@ -1,33 +1,15 @@
 pipeline {
     agent any
     stages {
-        stage('Node Version 14') {
-            agent {
-                docker { 
-                    image 'node:14' 
-                    }
-            }
-            environment {
-                HOME = '.'
-            }
+        stage("build") {
             steps {
-                sh """
-                    npm install
-                    npm run test
-                """
-                echo 'Test was successful'
+                sh "npm run install"
             }
         }
-    }
-    post {
-        failure {
-            echo 'Failed'
-        }
-        success {
-            echo 'Success'
-        }
-        always {
-            echo 'I alwasy run'
+        stage("test") {
+            steps {
+                sh "npm run test"
+            }
         }
     }
 }
