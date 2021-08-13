@@ -37,8 +37,9 @@ pipeline {
                         if (var == 'true'){
                             echo 'Yeah it was true'
                         }
-                    catch {
+                    catch (ex) {
                         echo 'Something wrong happened'
+                        echo 'Something ${ex}'
                     }
                 }
             }
