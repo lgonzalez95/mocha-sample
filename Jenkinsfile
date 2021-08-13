@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    environment {
+        DISABLE_AUTH = 'true'
+    }
     stages {
         stage("build") {
             stages {
@@ -25,6 +28,22 @@ pipeline {
                 sh "npm run test"
             }
         }
+        stage("groovy") {
+            steps {
+                script {
+                    try {
+                        def var
+                        var = env.DISABLE_AUTH
+                        if (var == 'true'){
+                            echo 'Yeah it was true'
+                        }
+                    catch {
+                        echo 'Something wrong happened'
+                    }
+                }
+            }
+        }
+
     }
     post {
             failure {
