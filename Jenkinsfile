@@ -13,7 +13,7 @@ pipeline {
                 }
                 stage("Execute install") {
                     steps {
-                        sh "npm install"
+                        bat "npm install"
                     }
                 }
             }
@@ -25,7 +25,7 @@ pipeline {
         }
         stage("test") {
             steps {
-                sh "npm run test"
+                bat "npm run test"
             }
         }
         stage("groovy") {
