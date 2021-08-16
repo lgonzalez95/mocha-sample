@@ -55,7 +55,7 @@ pipeline {
                 echo "No steps faile"
             }
             always {
-                echo "I alwyas run Test"
+                echo "I alwyas run 2"
             }
     }
 }
